@@ -6,7 +6,7 @@ require 'rdoc/rdoc'
 require 'rdoc/task'
 
 PKG_NAME    = 'thread_executor'
-PKG_VERSION = '1.0.0'
+PKG_VERSION = '1.0.1'
 
 spec = Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
@@ -22,7 +22,7 @@ spec = Gem::Specification.new do |s|
   s.extra_rdoc_files = [ 'README.md', 'Changelog' ]
   s.author = 'Sam Baskinger'
   s.email = 'basking2@yahoo.com'
-  s.homepage = 'http://sam.baskinger.tiddlyspot.com'
+  s.homepage = 'https://github.com/basking2/thread_executor/'
   s.license = 'BSD'
   s.description = <<EOF
   Thread executor library.

@@ -10,7 +10,7 @@ PKG_VERSION = '1.0.0'
 
 spec = Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
-  s.summary = 'Thread executor library inspired by Java and C++0x11'
+  s.summary = 'Thread executor library.'
   s.name = PKG_NAME
   s.version = PKG_VERSION
   s.requirements = []
@@ -25,6 +25,7 @@ spec = Gem::Specification.new do |s|
   s.homepage = 'http://sam.baskinger.tiddlyspot.com'
   s.license = 'BSD'
   s.description = <<EOF
+  Thread executor library.
 EOF
 end
 

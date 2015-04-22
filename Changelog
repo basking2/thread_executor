@@ -1,0 +1,8 @@
+2015-04-21 Sam Baskinger <basking2@yahoo.com>
+  * Extracting executor into independent package.
+
+2015-03-18 Sam Baskinger <basking2@yahoo.com>
+  * Adding concurrency with thread pool implementation.
+
+Copyright 2014, 2015 Sam Baskinger <basking2@yahoo.com>
+

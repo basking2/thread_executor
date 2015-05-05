@@ -25,13 +25,31 @@ class ThreadExecutorTest < Test::Unit::TestCase
     f2 = e.call { raise Exception.new("test exception") }
     begin
       assert_raise NoMethodError do
-        f1.value 
+        f1.value
       end
       assert_raise Exception do
         f2.value
       end
     ensure
       e.finish
+    end
+  end
+
+  def test_async_value
+    f = ThreadExecutor::async do
+      1+3
+    end
+
+    assert_equal 4, f.value
+  end
+
+  def test_async_exception
+    f = ThreadExecutor::async do
+      raise Exception.new "Boom"
+    end
+
+    assert_raise Exception do
+      f.value
     end
   end
 end
